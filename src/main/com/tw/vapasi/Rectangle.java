@@ -1,15 +1,24 @@
 package com.tw.vapasi;
 
-public class Rectangle {
+class Rectangle{
     private float length;
     private float breadth;
 
-    public Rectangle(float length,float breadth) {
+    Rectangle(float length,float breadth) {
         this.length = length;
-        this .breadth = breadth;
+        this.breadth = breadth;
     }
 
-    float findAreaOfRectangle(float length, float breadth) {
-        return length*breadth;
+    Rectangle(float side) {
+        this.length = side;
+        this.breadth = side;
+    }
+
+    float area() {
+        return length * breadth;
+    }
+
+    float perimeter() {
+        return 2 * (length + breadth);
     }
 }
