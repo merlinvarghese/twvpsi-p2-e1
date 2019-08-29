@@ -1,17 +1,12 @@
 package com.tw.vapasi;
 
-class Rectangle{
+class Rectangle {
     private float length;
     private float breadth;
 
-    Rectangle(float length,float breadth) {
+    Rectangle(float length, float breadth) {
         this.length = length;
         this.breadth = breadth;
-    }
-
-    Rectangle(float side) {
-        this.length = side;
-        this.breadth = side;
     }
 
     float area() {
